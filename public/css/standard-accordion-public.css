@@ -1,0 +1,63 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.accordion-front-inner-content {
+    position: relative;
+    margin-bottom: 5px;
+}
+.accordion-front-inner-content .accordion-title {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+.accordion-front-inner-content .accordion-title .ui-icon{
+    display: none;
+}
+.accordion-front-inner-content .accordion-title strong p {
+    margin: 0;
+    width: 100%;
+}
+.accordion-front-inner-content .accordion-title::before {
+    content: '+' !important;
+    position: absolute;
+    right: 15px;
+    font-size: 25px !important;
+    transform: translate(50%);
+    cursor: pointer;
+    color: #fff;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.accordion-front-inner-content .accordion-content {
+    position: relative;
+    background: #fff;
+    transition: display 0.5s linear;
+    padding: 20px 10px;
+    overflow-y: hidden;
+    height: auto;
+    display: none;
+}
+.accordion-front-inner-content .accordion-content p {
+    margin: 0 !important;
+}
+.accordion-front-inner-content .accordion-title.active::before {
+    content: '-' !important;
+}
+@media screen and (max-width: 1200px) {
+    .accordion-front-inner-content .accordion-title strong p {
+        max-width: 95%;
+        width: 100%;
+   }
+    .accordion-front-inner-content .accordion-content {
+        position: relative;
+        background: #fff;
+        transition: display 0.5s linear;
+        padding: 20px 10px;
+        overflow-y: hidden;
+        height: auto;
+   }
+}

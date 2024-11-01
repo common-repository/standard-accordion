@@ -1,0 +1,48 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+.accordion-block {
+    width: 90%;
+    margin: 0 auto;
+}
+.accordion-block .accordion-inner-content {
+    position: relative;
+    margin-bottom: 5px;
+}
+.accordion-block .accordion-inner-content .accordion-header .accordion-remove {
+    text-align: right;
+    cursor: pointer;
+}
+.accordion-block .accordion-inner-content .accordion-header .accordion-remove>span {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+.accordion-block .accordion-inner-content .accordion-header .accordion-title {
+    position: relative;
+    padding: 10px;
+    background: #2694af;
+}
+.accordion-block .accordion-inner-content .accordion-header .accordion-title p {
+    margin: 0;
+    width: 90%;
+}
+.accordion-block .accordion-inner-content .accordion-content {
+    position: relative;
+    transition: 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: hidden;
+    height: auto;
+}
+.accordion-block .accordion-inner-content .accordion-content p {
+    margin: 10px 0;
+}
+.accordion-block .create-list-item {
+    margin-top: 20px;
+    text-align: center;
+}
